@@ -167,7 +167,7 @@ class EntitiesWindow extends TabWindow
 	{
 		while (_entriesContainer.numChildren > 0)
 		{
-			var entry:EntityRow = cast _entriesContainer.getChildAt(0);
+			var entry:EntityRow = cast _entriesContainer.removeChildAt(0);
 			entry.destroy();
 		}
 	}
