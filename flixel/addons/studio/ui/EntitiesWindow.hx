@@ -170,6 +170,8 @@ class EntitiesWindow extends TabWindow
 			var entry:EntityRow = cast _entriesContainer.removeChildAt(0);
 			entry.destroy();
 		}
+		
+		_selectedEntityRow = null;
 	}
 
 	function updateEntriesPosition():Void
